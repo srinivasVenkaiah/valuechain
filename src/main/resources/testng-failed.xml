@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [iQluster Application Test Automation Test Suite]">
+  <listeners>
+    <listener class-name="Analyzer.MyTransformer"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="iQluster App Test Cases(failed)">
+    <classes>
+      <class name="com.testcases.DataCapturePageTest">
+        <methods>
+          <include name="verify_Capture_Upload_Questionnaire_Test"/>
+          <include name="verify_Removing_Questions_From_Questionnaire_Test"/>
+          <include name="verify_Capture_Settings_Score_Multiply_and_strikeout_records_Questionnaire_Test"/>
+          <include name="verify_Removing_Questions_From_Questionnaire_Test"/>   
+          <include name="verify_Capture_Settings_Score_Addition_Copy_and_Delete_records_Questionnaire"/>
+        </methods>
+      </class> <!-- com.testcases.DataCapturePageTest -->
+      <class name="com.testcases.MyNetworkListPageTest">
+        <methods>
+          <include name="Open_created_network_Test"/>
+        </methods>
+      </class> <!-- com.testcases.MyNetworkListPageTest -->
+      <class name="com.testcases.TenderPageTest">
+        <methods>
+          <include name="verify_RFQ_InTestUser1_Test"/>
+          <include name="RejectTender_Test"/>
+          <include name="verify_Rejected_tender_Test"/>
+          <include name="acknowledge_RFQ_Test"/>
+          <include name="verify_AckAndResponse_Test"/>
+          <include name="submit_SendRFQ_Tender_Test"/>
+          <include name="closeTender_Test"/>
+          <include name="deleteTender_Test"/>
+          <include name="selectTender_Test"/>
+        </methods>
+      </class> <!-- com.testcases.TenderPageTest -->
+      <class name="com.testcases.SettingsPageTest">
+        <methods>
+          <include name="verify_Delete_network_specific_tag_Test"/>
+          <include name="verify_Already_ExistedGroup_Test"/>
+          <include name="verify_Default_visibility_of_network_menu_for_the_network_connected_user_Test"/>
+          <include name="verify_Network_menu_invisibility_after_unckecking_options_for_the_network_connected_user_Test"/>
+        </methods>
+      </class> <!-- com.testcases.SettingsPageTest -->
+      <class name="com.testcases.AdvancedSearchPageTest">
+        <methods>
+          <include name="verify_Filter_by_Tag_option_Test"/>
+        </methods>
+      </class> <!-- com.testcases.AdvancedSearchPageTest -->
+    </classes>
+  </test> <!-- iQluster App Test Cases(failed) -->
+</suite> <!-- Failed suite [iQluster Application Test Automation Test Suite] -->

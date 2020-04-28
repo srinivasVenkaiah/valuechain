@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="iQluster Application Test Automation Test Suite" parallel="none">
+
+	<listeners>
+		<listener class-name="Analyzer.MyTransformer" />
+	</listeners>
+
+	<test name="iQluster App Test Cases" preserve-order="true">
+		<classes>
+			<class name="com.testcases.LoginPageTest"></class>
+			<class name="com.testcases.MyNetworkListPageTest"></class>
+			<class name="com.testcases.NetworkDashBoardPageTest"></class>
+			<class name="com.testcases.AdvancedSearchPageTest"></class>
+			<class name="com.testcases.ExplorePageTest"></class>
+			<class name="com.testcases.MapPageTest"></class>
+			<class name="com.testcases.LocationMapPageTest"></class>
+			<class name="com.testcases.DataCapturePageTest"></class>
+			<class name="com.testcases.ProductsPageTest"></class>
+			<class name="com.testcases.ServicesPageTest"></class>
+			<class name="com.testcases.ProjectsPageTest"></class>
+			<class name="com.testcases.AnalysePageTest"></class>
+			<class name="com.testcases.SettingsPageTest"></class>
+			<class name="com.testcases.TenderPageTest"></class>
+		</classes>
+	</test>
+</suite>
